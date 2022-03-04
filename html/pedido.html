@@ -1,0 +1,71 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido - Pasteles Hermanos</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <h1>Bienvenido a Pasteles Hermanos</h1>
+    <h2>Pedido</h2>
+    <p> A continuación denos los datos de su pedido y crea tu pastel personalizado: </p>
+  
+    <form action="" id="form" method="post">   
+        <label for="nombrePedido"> Nomre para el pedido </label><br>
+        <input type="text" id="Input1" name="Input1"><br><br>
+        <label for="correo">Correo electrónico</label><br>
+        <input type="email" id="correo" name="correo"><br><br>
+        <label for="telefono">Teléfono de contacto</label><br>
+        <input type="tel" id="telelfono" name="telefono" maxlength="10"><br><br>
+        <label for="entrega">Fecha y hora de entrega</label><br>
+        <input type="datetime-local" id="entrega" name="entrega"><br>
+
+        <hr>
+
+        <h2>Selecciona tu decoración</h2>
+        <input type="checkbox" id="coraRojo" name="coraRojo" value="CorazonRojo">
+        <label for="coraRojo">Paq 5 corazones de chocolare rojo ............ $10</label><br>
+        <input type="checkbox" id="coraBlanco" name="coraBlanco" value="CorazonBlanco">
+        <label for="coraBlanco">Paq 5 corazones de chocolate blanco ........ $15</label><br>
+        <input type="checkbox" id="coraRosa" name="coraRosa" value="CorazonRosa">
+        <label for="coraRosa">Paq 5 corazones de chocolate rosa ............ $13</label><br>
+        
+        <h2>Elige tu cubierta de sabor</h2>
+        <input type="radio" id="mango" name="cubierta" value="Mango">
+        <label for="mango">Mango</label><br>
+        <input type="radio" id="fresa" name="cubierta" value="Fresa">
+        <label for="fresa">Fresa</label><br>
+        <input type="radio" id="guayaba" name="cubierta" value="Guayaba">
+        <label for="guayaba">Guayaba</label><br>
+
+        <h2>Cantidad de porciones</h2>
+        <label for="porciones">Cantidad de porciones</label>
+        <select id="porciones" name="porciones">
+            <option value="5">5 personas($100)</option>
+            <option value="10">10 personas ($150</option>
+            <option value="18">18 personas ($200)</option>
+        </select>
+        
+        <h2>Sabor de base</h2>
+        <label for="base">Eliga su sabor de base</label><br>
+        <input list="base">
+        <datalist id="base">
+            <option value="Leche">
+            <option value="Guayaba">
+            <option value="Chocolate">
+            <option value="Fresa">
+            <option value="Napolitano">
+        </datalist><br>
+                
+        <h2>Comentarios</h2>
+        <textarea id="comentario" name="comentario" maxlength="200" cols="40" rows="5"></textarea><br><br>
+        <hr>
+        
+        <h2>¿Está listo?</h2>
+        <input type="reset"><br>
+        <input type="submit"><br>
+    </form>
+
+</body>
+</html>
